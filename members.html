@@ -1,0 +1,225 @@
+<!--
+Barret J. Nobel
+Assignment 3
+Internet and Web Tech
+March 24th, 2016
+Professor Lili Hai
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<!-- define the meta data -->
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "Restaurant member page">
+		<meta name = "keywords" content = "HTML5, restaurant, lili hai, private dining, login">
+		<meta name = "author" content = "Barret J. Nobel">
+		<link rel="shortcut icon" href="images/ow.ico">
+
+		<!-- link to the stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/home.css">
+
+		<!-- set the title of the page -->
+		<title>Member</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Welcome!</h1>	
+
+			<!-- NAVIGATION BAR -->
+			<!-- picture to link to each page -->
+			<!-- each picture is 100x100 -->
+			<nav>
+				<p>
+					<!-- home page link -->
+					<a href = "home.html">
+						<img src  = "images/navBar/home.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Home Page">
+				    </a>
+
+				    <!-- menu page link -->
+					<a href = "menus.html">
+						<img src  = "images/navBar/menu.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Menu Page">
+			        </a>
+
+			        <!-- reservation page link -->
+					<a href = "reservation.html">
+						<img src  = "images/navBar/reservation.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Reservation Page">
+				    </a>
+
+				    <!-- private page link -->
+					<a href = "privateDining.html">
+						<img src  = "images/navBar/private.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Private dining Page">
+					</a>	      
+
+					<!-- comments page link -->
+					<a href = "comments.html">
+						<img src  = "images/navBar/comment.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Comments Page">
+			        </a>
+
+			        <!-- members page link -->
+					<a href = "members.html">
+						<img src  = "images/navBar/members.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Members only Page">
+			        </a>
+				</p>
+			</nav>
+		</header>
+
+		<!-- SECTION I: login information -->
+		<section id = "login">
+
+			<!-- begin form -->
+			<!-- links to professor hai's page -->
+			<div class = "loginAccount">
+				<form method = "post" action = "http://cowmathcis.com/facultypages/hail.html">
+
+					<!-- get the user's login name -->
+					<!-- autofill enabled and required -->
+					<p>
+						<label>Login:
+							<input name = "username" type = "text" placeholder = "Enter your username" autofill = "yes" required></input>
+						</label>
+					</p>
+
+					<!-- get the user password, required -->
+					<p>
+						<label>Password
+							<input name = "password" type = "password" placeholder = "Enter your password" required></input>
+						</label>
+					</p>
+
+					<!-- the submit and reset buttons -->
+					<p>
+						<input type = "submit" value = "Submit" />
+						<input type = "reset" value = "Clear" />
+					</p>
+				</form>
+			</div>
+		</section>
+
+		<section id = "newMembers">
+
+			<!-- begin form -->
+			<!-- links to professor hai's page -->
+			<div class = "newAccount">
+				<form method = "post" action = "http://cowmathcis.com/facultypages/hail.html">
+
+					<!-- get user's new username -->
+					<!-- autofill enabled and required -->
+					<p> New Members
+						<label>Login:
+							<input name = "newUsername" type = "text" placeholder = "Enter a username" autofill = "yes" required></input>
+						</label>
+					</p>
+
+					<!-- set the user password, required -->
+					<p>
+						<label>Password
+							<input name = "newPassword" type = "password" placeholder = "Enter your password" required></input>
+						</label>
+					</p>	
+
+					<p>
+						<label>Phone Number: xxx-xxx-xxxx
+							<input type = "tel" pattern = \d{3}[\-]\d{3}[\-]\d{4} />
+						</label>
+					</p>
+
+					<p>
+						<label>Name:
+							<input type = "text" />
+						</label>
+					</p>
+
+					<p>
+						<label>Email:
+							<input type = "email" />
+						</label>
+					</p>
+
+
+					<!-- the submit and reset buttons -->
+					<p>
+						<input type = "submit" value = "Create New Account" />
+						<input type = "reset" value = "Reset" />
+					</p>
+				</form>
+			</div>
+			<br>
+		</section>
+
+		<div class = "aboutMembership">
+			<p>
+				We're loved for our hand-breaded Boneless Buffalo Wings, our signature Broiled Sirloin Tips, our famous tall, frosted mugs of beer and more. All are served in a distinctly hearty New England style, enjoyed over good times with great family and friends. Simple, honest, genuine food. 
+				Never pretentious. Always satisfying.
+			</p>
+
+			<p>
+				Become a member today to receive great benefits for your birthday and free beer!
+			</p>
+
+		</div>
+
+		<!-- line before footer -->
+		<hr>
+
+		<!-- footer section -->
+		<footer>
+			<!-- SECTION III: Ending and contact jazz -->
+			<section id = "ending">
+				<footer>
+					<!-- links to each page again and a link to contact me -->
+					<nav>
+						<div>	
+							<div class = "footer">
+								<a href = "home.html">Home</a></div>
+							<div class = "footer">
+								<a href = "menus.html">Menu</a></div>
+							<div class = "footer">
+								<a href = "reservation.html">Reserve</a></div>
+							<div class = "footer">
+								<a href = "privateDining.html">Private</a></div>
+							<div class = "footer">
+								<a href = "comments.html">Comment</a></div>
+							<div class = "footer">
+								<a href = "members.html">Members</a></div>
+							<div class = "footer">
+								<a href = "mailto:bnobel@oldwestbury.edu">Contact</a></div>
+						</div>
+					</nav>
+
+					<div class = "logo">
+						<img src ="images/lebonTechLogo.png"
+						       width ="125"
+						      height ="125"
+						         alt ="LebonTech Solutions logo" />
+
+						<!-- special character, used for coypright -->
+						<p>
+							&copy 2016 <a href = "http://pocketanimations.com">LebonTech Solutions </a>
+						</p>
+				    </div>
+				</footer>
+			</section>
+		</footer>
+	</body>
+</html>

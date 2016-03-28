@@ -1,0 +1,215 @@
+<!--
+Barret J. Nobel
+Assignment 3
+Internet and Web Tech
+March 25th, 2016
+Professor Lili Hai
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<!-- define the meta data -->
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "Restaurant comment page">
+		<meta name = "keywords" content = "HTML5, restaurant, lili hai, private dining">
+		<meta name = "author" content = "Barret J. Nobel">
+		<link rel="shortcut icon" href="images/ow.ico">
+
+		<!-- link to the stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/home.css">
+
+		<!-- set the title of the page -->
+		<title>Comment</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Welcome!</h1>	
+
+			<!-- NAVIGATION BAR -->
+			<!-- picture to link to each page -->
+			<!-- each picture is 100x100 -->
+			<nav>
+				<p>
+					<!-- home page link -->
+					<a href = "home.html">
+						<img src  = "images/navBar/home.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Home Page">
+				    </a>
+
+				    <!-- menu page link -->
+					<a href = "menus.html">
+						<img src  = "images/navBar/menu.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Menu Page">
+			        </a>
+
+			        <!-- reservation page link -->
+					<a href = "reservation.html">
+						<img src  = "images/navBar/reservation.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Reservation Page">
+				    </a>
+
+				    <!-- private page link -->
+					<a href = "privateDining.html">
+						<img src  = "images/navBar/private.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Private dining Page">
+					</a>	      
+
+					<!-- comments page link -->
+					<a href = "comments.html">
+						<img src  = "images/navBar/comment.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Comments Page">
+			        </a>
+
+			        <!-- members page link -->
+					<a href = "members.html">
+						<img src  = "images/navBar/members.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Members only Page">
+			        </a>
+				</p>
+			</nav>
+		</header>
+
+		<!-- SECTION I: Feedback -->
+		<section id = "feedback">
+			<p>
+				We want every customer to have a great experience every time they visit Barret's. <br>
+				Something not quite right the last time you stopped in?<br>
+				Please complete the form below and send it to us.
+			</p>
+
+			<!-- begin form --> 
+			<!-- links to my github this time -->
+			<!-- SECTION II: Feedback.form -->
+			<section id ="form">
+				<form method = "get" action = "http://github.com/frankTurtle">
+
+					<!-- a few hidden elements just for practice -->
+					<input type = "hidden" name = "recipient" value = "bnobel@oldwestbury.edu">
+					<input type = "hidden" name = "subject"	value = "Feedback Form">
+
+					<!-- asking for the date -->
+					<h4>Please provide details about your visit</h4>
+					<p>
+						<label>Date:
+							<input name = "date" type ="date" />
+						</label>
+					</p><br>
+
+					<!-- asking for any comments -->
+					<h4>Comments regarding your visit</h4>
+					<p>
+						<textarea name = "comments" rows = "10" cols = "50" placeholder = "Enter comments here"></textarea>
+					</p><br>
+
+					<!-- asking for contact information -->
+					<h4>How should we contact you if necessary?</h4>
+					<p>
+						<label>Best time to contact you
+							
+							<!-- drop down list with times to contact -->
+							<select name = "contactTime">
+								<option selected>Morning</option>
+								<option>Afternoon</option>
+								<option>Evening</option>
+							</select>
+						</label>
+					</p>
+
+					<!-- gets email address -->
+					<p>
+						<label>Your email address
+							<input name = "email" type = "email" placeholder = "Enter email address"></input>
+						</label>
+						<label>Confirm email address
+							<input name = "confirmationEmail" type = "email" placeholder = "Confirm email address"></input>
+						</label>
+					</p><br>
+
+					<!-- how likely they are to recommend us -->
+					<!-- radio button with three options -->
+					<h4>How likely are you to recommend us to your friends?</h4>
+					<p>
+						<label>Highly
+							<input name = "recommendation" type = "radio"
+							value = "link"></label>
+					</p>
+					<p>
+						<label>Somewhat
+							<input name = "recommendation" type = "radio"
+							value = "deitel.com"></label>
+					</p>
+					<p>
+						<label>Never
+							<input name = "recommendation" type = "radio"
+							value = "book"></label>
+					</p><br>
+
+
+					<!-- the submit and reset buttons -->
+					<p>
+						<input type = "submit" value = "Submit" />
+						<input type = "reset" value = "Clear" />
+					</p>
+				</form>
+			</section>
+		</section>
+
+		<!-- line before footer -->
+		<hr>
+
+		<!-- footer section -->
+		<footer>
+			<!-- SECTION III: Ending and contact jazz -->
+			<section id = "ending">
+				<footer>
+					<!-- links to each page again and a link to contact me -->
+					<nav>
+						<div>	
+							<div class = "footer">
+								<a href = "home.html">Home</a></div>
+							<div class = "footer">
+								<a href = "menus.html">Menu</a></div>
+							<div class = "footer">
+								<a href = "reservation.html">Reserve</a></div>
+							<div class = "footer">
+								<a href = "privateDining.html">Private</a></div>
+							<div class = "footer">
+								<a href = "comments.html">Comment</a></div>
+							<div class = "footer">
+								<a href = "members.html">Members</a></div>
+							<div class = "footer">
+								<a href = "mailto:bnobel@oldwestbury.edu">Contact</a></div>
+						</div>
+					</nav>
+
+					<div class = "logo">
+						<img src ="images/lebonTechLogo.png"
+						       width ="125"
+						      height ="125"
+						         alt ="LebonTech Solutions logo" />
+
+						<!-- special character, used for coypright -->
+						<p>
+							&copy 2016 <a href = "http://pocketanimations.com">LebonTech Solutions </a>
+						</p>
+				    </div>
+				</footer>
+			</section>
+		</footer>
+	</body>
+</html>

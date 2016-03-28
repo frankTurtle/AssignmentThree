@@ -1,0 +1,319 @@
+<!--
+// Barret J. Nobel
+// Assignment 3
+// Internet and Web Tech
+// March 20th, 2016
+// Professor Lili Hai
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<!-- define the meta data -->
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "Dish order page">
+		<meta name = "keywords" content = "restaurant, introduction">
+		<meta name = "author" content = "Barret J. Nobel">
+		<link rel="shortcut icon" href="images/ow.ico">
+
+		<!-- link to the stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/home.css">
+
+		<!-- link to JS -->
+		<script type = "text/javascript" src = "scripts/DishOrder.js"></script>
+
+		<!-- set the title of the page -->
+		<title>Dish Order</title>
+	</head>
+
+	<body>
+		<header style = "background-image: none">
+			<h1>Dish Order</h1>	
+		</header>
+
+		<!-- SECTION I -->
+		<!-- contains login fields for staff -->
+		<section id="login">
+				<p>
+					<label>Username:
+						<input type = "text" id = "username" placeholder = "frank" />
+					</label>
+				</p>
+
+				<p>
+					<label>Password:
+						<input type = "password" id = "password" placeholder = "123456" />
+					</label>
+				</p>
+
+				<p>
+					<input type = "button" value = "Login" id = "checkButton" onclick = "javascript:login();"  />
+					<input type = "button" value = "Reset" id = "resetButton" onclick = "javascript:resetResults();" />
+				</p>
+		</section>
+
+		<!-- line -->
+		<hr>
+
+		<!-- SECTION II -->
+		<!-- where the server places order information -->
+		<section id = "order">
+				<div>
+				<!-- start of the form -->
+				<!-- links to my linked profile -->
+				<form method = "get" id = "dishForm">
+					<!-- party size --> 
+					<p>
+						<label>Table Number
+							<input type = "text" id = "formTable"/>
+						</label>
+					</p>
+
+					<p>
+						<section id = "Menu">
+							<!-- start the menu table -->
+							<table class = "menuTable">
+								<!-- empty head -->
+								<thead></thead>
+
+								<!-- begin with the table body -->
+								<tbody>
+									<!-- first row -->
+									<!-- MEAT  header -->
+									<tr>
+										<th colspan = 4><h1>Meat</h1></th>
+									</tr>
+
+									<!-- second row -->
+									<!-- a table with all the meat -->
+									<tr class = "animalType">
+										<th id = "pork"><h3>Pork</h3></th>
+										<th><h3>Poultry</h3></th>
+										<th id = "beef"><h3>Beef</h3></th>
+										<th id = "seafood"><h3>Seafood</h3></th>
+									</tr>
+
+									<!-- third row -->
+									<!-- the meat dishes -->
+									<tr>
+										<th id = "number1Label">Pork Shoulder</th>
+										<th id = "number2Label">Grilled Chicken</th>
+										<th id = "number3Label">Hamburger</th>
+										<th id = "number4Label">Lobster</th>
+									</tr>
+
+									<!-- fourth row -->
+									<!-- prices for meat -->
+									<tr>
+										<th id = "number1Price">&dollar;17.00</th>
+										<th id = "number2Price">&dollar;27.00</th>
+										<th id = "number3Price">&dollar;9.00</th>
+										<th id = "number4Price">&dollar;37.00</th>
+									</tr>
+
+									<!-- fifth row -->
+									<!-- meat descriptions -->
+									<tr>
+										<td>
+											<p>
+									         	A pork shoulder
+									         </p>
+										</td>
+
+										<td>
+											<p>
+									         	Grilled chicken with some greens
+									         </p>
+										</td>
+
+										<td>
+											<p>
+									         	Rare cooked burger with bacon and fries
+									         </p>
+										</td>
+
+										<td>
+											<p>
+									         	Lobster steamed alive in front of you
+									         </p>
+										</td>
+									</tr>
+
+									<!-- sixth row -->
+									<!-- Reservation number -->
+									<tr>
+										<td>
+											<label>Number
+												<input type = "text" id = "number1"/>
+											</label>
+										</td>
+
+										<td>
+											<label>Number
+												<input type = "text" id = "number2"/>
+											</label>
+										</td>
+
+										<td>
+											<label>Number
+												<input type = "text" id = "number3"/>
+											</label>
+										</td>
+
+										<td>
+											<label>Number
+												<input type = "text" id = "number4"/>
+											</label>
+										</td>
+									</tr>
+
+									<!-- seventh row -->
+									<!-- vegetable section -->
+									<tr>
+										<th colspan = 4><h1>Vegetables</h1></th>
+									</tr>
+
+									<!-- first row veggies -->
+									<!-- type of vegetables -->
+									<tr class = "vegetables"> 
+										<th id = "notLamb"><h3>Carrots</h3></th>
+										<th><h3>Salad</h3></th>
+										<th><h3>Broccoli</h3></th>
+										<th><h3>Asparagus</h3></th>
+									</tr>
+
+									<!-- second row veggies -->
+									<!-- vegetable dishes -->
+									<tr>
+										<th id = "number5Label">Grilled Carrots</th>
+										<th id = "number6Label">Caesar Salad</th>
+										<th id = "number7Label">Broccoli n' Cheese</th>
+										<th id = "number8Label">Asparagus n prosciutto</th>
+									</tr>
+
+									<!-- third row veggies -->
+									<!-- prices for veggies -->
+									<tr>
+										<th id = "number5Price">&dollar;15.00</th>
+										<th id = "number6Price">&dollar;19.00</th>
+										<th id = "number7Price">&dollar;7.00</th>
+										<th id = "number8Price">&dollar;55.00</th>
+									</tr>
+
+									<!-- fourth row veggies -->
+									<!-- description for veggies -->
+									<tr>
+										<td>
+											<p>
+									         	Carrots that are grilled
+									         </p>
+										</td>
+
+										<td>
+											<p>
+									         	A salad fit for Caesar himself
+									         </p>
+										</td>
+
+										<td>
+											 <p>
+									         	Literally just a bowl of broccoli
+									         </p>
+										</td>
+
+										<td>
+											<p>
+									         	Asparagus with meat wrapped around it
+									         </p>
+										</td>
+									</tr>
+
+									<!-- fifth row veggies -->
+									<!-- number of dishes -->
+									<tr>
+										<td>
+											<label>Number
+												<input type = "text" id = "number5"/>
+											</label>
+										</td>
+
+										<td>
+											<label>Number
+												<input type = "text" id = "number6"/>
+											</label>
+										</td>
+
+										<td>
+											<label>Number
+												<input type = "text" id = "number7"/>
+											</label>
+										</td>
+
+										<td>
+											<label>Number
+												<input type = "text" id = "number8"/>
+											</label>
+										</td>
+									</tr>
+								</tbody>
+
+								<!-- empty footer -->
+								<tfoot></tfoot>
+							</table>
+						</section>
+					</p>
+
+					<!-- Phone Number -->
+					<p>
+						<label>Phone Number: xxx-xxx-xxxx
+							<input type = "tel"
+							pattern = \d{3}[\-]\d{3}[\-]\d{4} 
+							id = "formPhone" />
+						</label>
+					</p>
+
+					<!-- Name -->
+					<p>
+						<label>Name:
+							<input type = "text" id = "formName" />
+						</label>
+					</p>
+
+					<!-- email -->
+					<p>
+						<label>Email:
+							<input type = "email" id = "formEmail" />
+						</label>
+					</p>
+
+					<!-- a date selctor thats required -->
+					<p>
+						<label>Date *: 
+							<input name = "date" type = "date" required id = "date"/>
+						</label>
+					</p>
+
+					<!-- time election thats required -->
+					<p>
+						<label>Time *: 
+							<input name = "time" type = "time" required id = "formTime"/>
+							( hh : mm : ss )
+						</label>
+					</p>
+
+					<!-- the submit and reset buttons -->
+					<p>
+						<input type = "button" value = "Place Order" id = "orderButton" onclick = "javascript:placeOrder();"  />
+						<input type = "button" value = "Change Order" id = "changeButton" onclick = "javascript:changeOrder();" />
+					</p>
+
+					<!-- lets user know which fields are required -->
+					<p>
+						* denotes required fields
+					</p>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>

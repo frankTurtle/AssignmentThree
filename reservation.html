@@ -1,0 +1,197 @@
+<!--
+Barret J. Nobel
+Assignment 3
+Internet and Web Tech
+February 8th, 2016
+Professor Lili Hai
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<!-- define the meta data -->
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "Restaurant reservation page">
+		<meta name = "keywords" content = "HTML5, restaurant, lili hai, reservation">
+		<meta name = "author" content = "Barret J. Nobel">
+		<link rel="shortcut icon" href="images/ow.ico">
+
+		<!-- link to the stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/home.css">
+
+		<!-- link to JS -->
+		<script type = "text/javascript" src = "scripts/Reservation.js"></script>
+
+		<!-- set the title of the page -->
+		<title>Reservation</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Welcome!</h1>	
+
+			<!-- NAVIGATION BAR -->
+			<!-- picture to link to each page -->
+			<!-- each picture is 100x100 -->
+			<nav>
+				<p>
+					<!-- home page link -->
+					<a href = "home.html">
+						<img src  = "images/navBar/home.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Home Page">
+				    </a>
+
+				    <!-- menu page link -->
+					<a href = "menus.html">
+						<img src  = "images/navBar/menu.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Menu Page">
+			        </a>
+
+			        <!-- reservation page link -->
+					<a href = "reservation.html">
+						<img src  = "images/navBar/reservation.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Reservation Page">
+				    </a>
+
+				    <!-- private page link -->
+					<a href = "privateDining.html">
+						<img src  = "images/navBar/private.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Private dining Page">
+					</a>	      
+
+					<!-- comments page link -->
+					<a href = "comments.html">
+						<img src  = "images/navBar/comment.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Comments Page">
+			        </a>
+
+			        <!-- members page link -->
+					<a href = "members.html">
+						<img src  = "images/navBar/members.png" 
+						   width  = "100"
+						   height = "100"
+						      alt = "Members only Page">
+			        </a>
+				</p>
+			</nav>
+		</header>
+
+		<!-- SECTION I: -->
+		<section id = "gatherInfo">
+			<div>
+				<!-- start of the form -->
+				<form method = "get" id = "form">
+					<!-- party size --> 
+					<p>
+						<label>Party Size: 2 - 150
+							<input type = "text" id = "formParty"/>
+						</label>
+					</p>
+
+					<!-- phone number with restrictions -->
+					<p>
+						<label>Phone Number: xxx-xxx-xxxx
+							<input type = "tel"
+							pattern = \d{3}[\-]\d{3}[\-]\d{4} 
+							id = "formPhone" />
+						</label>
+					</p>
+
+					<!-- name -->
+					<p>
+						<label>Name:
+							<input type = "text" id = "formName" />
+						</label>
+					</p>
+
+					<!-- eamil -->
+					<p>
+						<label>Email:
+							<input type = "email" id = "formEmail" />
+						</label>
+					</p>
+
+					<!-- a date selctor thats required -->
+					<p>
+						<label>Date *: 
+							<input name = "date" type = "date" required id = "date"/>
+						</label>
+					</p>
+
+					<!-- time election thats required -->
+					<p>
+						<label>Time *: 
+							<input name = "time" type = "time" required id = "formTime"/>
+							( hh : mm : ss )
+						</label>
+					</p>
+
+					<!-- the submit and reset buttons -->
+					<p>
+						<input type = "button" value = "Check availability" id = "checkButton" onclick = "javascript:submitForm();"  />
+						<input type = "button" value = "Clear" id = "resetButton" onclick = "javascript:resetResults();" />
+					</p>
+
+					<!-- lets user know which fields are required -->
+					<p>
+						* denotes required fields
+					</p>
+				</form>
+			</div>
+		</section>
+
+		<!-- line before the footer -->
+		<hr>
+		
+		<!-- footer section -->
+		<footer>
+			<!-- SECTION III: Ending and contact jazz -->
+			<section id = "ending">
+				<footer>
+					<!-- links to each page again and a link to contact me -->
+					<nav>
+						<div>	
+							<div class = "footer">
+								<a href = "home.html">Home</a></div>
+							<div class = "footer">
+								<a href = "menus.html">Menu</a></div>
+							<div class = "footer">
+								<a href = "reservation.html">Reserve</a></div>
+							<div class = "footer">
+								<a href = "privateDining.html">Private</a></div>
+							<div class = "footer">
+								<a href = "comments.html">Comment</a></div>
+							<div class = "footer">
+								<a href = "members.html">Members</a></div>
+							<div class = "footer">
+								<a href = "mailto:bnobel@oldwestbury.edu">Contact</a></div>
+						</div>
+					</nav>
+
+					<div class = "logo">
+						<img src ="images/lebonTechLogo.png"
+						       width ="125"
+						      height ="125"
+						         alt ="LebonTech Solutions logo" />
+
+						<!-- special character, used for coypright -->
+						<p>
+							&copy 2016 <a href = "http://pocketanimations.com">LebonTech Solutions </a>
+						</p>
+				    </div>
+				</footer>
+			</section>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,206 @@
+<!--
+Barret J. Nobel
+Assignment 3
+Internet and Web Tech
+March 24th, 2016
+Professor Lili Hai
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<!-- define the meta data -->
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "Restaurant Home page">
+		<meta name = "keywords" content = "restaurant, introduction">
+		<meta name = "author" content = "Barret J. Nobel">
+		<link rel="shortcut icon" href="images/ow.ico">
+
+		<!-- link to the stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/home.css">
+
+		<!-- link to JS -->
+		<script type = "text/javascript" src = "scripts/Home.js"></script>
+
+		<!-- set the title of the page -->
+		<title>Restaurant Home</title>
+	</head>
+
+	<body>
+		<header>
+			<h1 id = "greeting" >Welcome!</h1>	
+
+			<div id = "headerWrapper">
+				<!-- NAVIGATION BAR -->
+				<!-- picture to link to each page -->
+				<!-- each picture is 100x100 -->
+				<nav>
+					<p>
+						<!-- home page link -->
+						<a href = "home.html">
+							<img src  = "images/navBar/home.png" 
+							   width  = "100"
+							   height = "100"
+							      alt = "Home Page">
+					    </a>
+
+					    <!-- menu page link -->
+						<a href = "menus.html">
+							<img src  = "images/navBar/menu.png" 
+							   width  = "100"
+							   height = "100"
+							      alt = "Menu Page">
+				        </a>
+
+				        <!-- reservation page link -->
+						<a href = "reservation.html">
+							<img src  = "images/navBar/reservation.png" 
+							   width  = "100"
+							   height = "100"
+							      alt = "Reservation Page">
+					    </a>
+
+					    <!-- private page link -->
+						<a href = "privateDining.html">
+							<img src  = "images/navBar/private.png" 
+							   width  = "100"
+							   height = "100"
+							      alt = "Private dining Page">
+						</a>	      
+
+						<!-- comments page link -->
+						<a href = "comments.html">
+							<img src  = "images/navBar/comment.png" 
+							   width  = "100"
+							   height = "100"
+							      alt = "Comments Page">
+				        </a>
+
+				        <!-- members page link -->
+						<a href = "members.html">
+							<img src  = "images/navBar/members.png" 
+							   width  = "100"
+							   height = "100"
+							      alt = "Members only Page">
+				        </a>
+					</p>
+				</nav>
+			</div>
+		</header>
+
+		<!-- SECTION I: The introduction to the best restaurant -->
+		<section id="intro">
+			<!-- a brief introduction -->
+			<p>
+				Barret Nobel, Founder of Barret's Restaurant, came to America hoping to be successful. His dream came true in 1987 when he opened Barret's Restaurant in Levittown, New York – a place to share his love and passion for authentic Italian food. His success was due in part by the use of his grandmother’s original recipes from Calabria, Italy and using only the highest quality imported ingredients. Over the years, people have come from all over Long Island, and more recently all over New York,  to taste these old world recipes.
+			</p>
+
+			<!-- usage of a special character -->
+			<p>
+				Through the years, Barret's Restaurant has expanded from a pizzeria and small dining area to a full catering facility with four rooms. Capable of holding private small and large functions of 35 to 150 people, Barret's specializes in: school events, fundraisers, Christenings, Communions, Confirmations &amp Bah Mitzvahs, Sweet Sixteen's and Weddings.
+			</p>
+			<p>
+				From Rich the Magish entertaining at your table on Sundays to Murder Mystery shows, Comedy shows, musical entertainment, and more, Barret's is the perfect restaurant for any occasion!
+			</p>
+			<p>
+				Open 7 days a week to serve you lunch and dinner!
+			</p>
+			<p>
+				Sunday through Thursday: 11am to 10pm
+			</p>
+			<p>
+				Friday and Saturday: 11am to 11:30pm
+			</p>
+		</section>
+
+		<!-- SECTION II: Images of the delicious food we create -->
+		<!-- Table to display some of the menu choices -->
+		<!-- each picture is also an anchored link to the menu choice -->
+		<!-- each picture is 325x325 -->
+		<section id = "images">
+			<div class = "firstRow">
+				<div class = "porkAndNotLamb">
+					<a href = "menus.html#pork">
+						<img src ="images/dinner/porkShoulder.jpg"
+					       width ="325"
+					      height ="325"
+					         alt ="delicious dish one" />
+				    </a>
+				</div>
+
+				<div>
+				    <a href = "menus.html#notLamb">
+						<img src ="images/dinner/dinner2.jpg"
+					       width ="325"
+					      height ="325"
+					         alt ="delicious dish two" />
+			        </a>
+				</div>
+			</div>
+
+			<div class ="secondRow">
+				<div>
+					<a href = "menus.html#beef">
+						<img src ="images/dinner/dinner3.jpg"
+					       width ="325"
+					      height ="325"
+					         alt ="delicious dish three" />
+				    </a>
+				</div>
+
+				<div>
+					<a href = "menus.html#seafood">
+						<img src ="images/dinner/dinner4.jpg"
+					       width ="325"
+					      height ="325"
+					         alt ="delicious dish four" />
+				    </a>
+				</div>
+			</div>
+		</section>
+
+		<!-- line before the footer -->
+		<hr>
+
+		<!-- footer section -->
+		<footer>
+			<!-- SECTION III: Ending and contact jazz -->
+			<section id = "ending">
+				<footer>
+					<!-- links to each page again and a link to contact me -->
+					<nav>
+						<div>	
+							<div class = "footer">
+								<a href = "home.html">Home</a></div>
+							<div class = "footer">
+								<a href = "menus.html">Menu</a></div>
+							<div class = "footer">
+								<a href = "reservation.html">Reserve</a></div>
+							<div class = "footer">
+								<a href = "privateDining.html">Private</a></div>
+							<div class = "footer">
+								<a href = "comments.html">Comment</a></div>
+							<div class = "footer">
+								<a href = "members.html">Members</a></div>
+							<div class = "footer">
+								<a href = "mailto:bnobel@oldwestbury.edu">Contact</a></div>
+						</div>
+					</nav>
+
+					<div class = "logo">
+						<img src ="images/lebonTechLogo.png"
+						       width ="125"
+						      height ="125"
+						         alt ="LebonTech Solutions logo" />
+
+						<!-- special character, used for coypright -->
+						<p>
+							&copy 2016 <a href = "http://pocketanimations.com">LebonTech Solutions </a>
+						</p>
+				    </div>
+				</footer>
+			</section>
+		</footer>
+	</body>
+</html>
